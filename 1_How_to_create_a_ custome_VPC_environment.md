@@ -36,10 +36,10 @@
         Availability Zone: "ap-northeast-1c"
         IPv4 CIDR block: "10.0.3.0/24" > Then select "Create Subnet"
 
-    Resourses:
-    - https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html#subnet-basics
-    - For Subnet Creator https://network00.com/NetworkTools/IPv4SubnetCreator/
-    - For CIDR Range https://cidr.xyz/
+Resourses:
+- https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html#subnet-basics
+- For Subnet Creator https://network00.com/NetworkTools/IPv4SubnetCreator/
+- For CIDR Range https://cidr.xyz/
 
 ## Step 3: Create an Internet Gateway (IG)
 
