@@ -51,8 +51,41 @@ Resourses:
         Select Actions > Attach to VPC > In Available VPCs, select "awslab" > Attach internet gateway.
 ## Step 4: Create a NAT gateway
 
+    In this phase we are going to create 2 NAT Gateways to allow communication out of the private subnets.
 
+    On the VPC Dashboard, in the navigation pane, select "NAT Gateways".
+    Select "Create NAT gateway".
+    In Name, we considered "awslab Gateway 1" > then in Subnet, select "Public Subnet 1".
+    Select "Allocate Elastic IP (Public IP) > then select "Create NAT Gateway".
 
+    For 2nd NAT, go again In navigation pane, select "NAT Gateways", and then select "Create NAT gateway".
+
+    In Name, enter "awslab NAT Gateway 2".
+    In Subnet, select "Public Subnet 2".
+    Select "Allocate Elastic IP" (Public IP), > then select "Create NAT Gateway".
+
+## Step 5: Configure the public route table
+
+    Configure the public route table
+
+    On the VPC Dashboard, in the navigation pane, select Route Tables.
+    Expand the VPC ID column, locate the route that has a awslab > then select the check box for the awslab row.
+        1. select the Routes tab.
+        2. Click Edit routes 
+        3.  "   Add route
+        4. 
+        5. In Destination, enter 0.0.0.0/0
+        6. 
+        7. In the Target drop-down list, select Internet Gateway > 
+        8. click  the "awslab IG".
+        9. Save
+
+	Now associate "Public Subnet" into "Public RT"
+		1. Click on "Subnet Associations"
+		2.   "	on "Edit subnet associations"
+		3. Do tick mark on "Public Subnet 1 & Public Subnet 2 check box"
+		4. Click "Save Associations"
+        
 ## Resources
 - https://docs.aws.amazon.com/vpc/index.html
 - For Subnet Creator https://network00.com/NetworkTools/IPv4SubnetCreator/
