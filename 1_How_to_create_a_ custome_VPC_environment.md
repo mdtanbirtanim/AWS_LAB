@@ -23,7 +23,7 @@
         Availability Zone: "ap-northeast-1c"
         IPv4 CIDR block: "10.0.1.0/24" > Then select "Create Subnet"
         
-    To enable auto-assign piblic IP4 address follow the below  procedure (NB: Applicable only for public subnet)
+    To enable auto-assign piblic IPv4 address follow the below  procedure (NB: Applicable only for public subnet)
          Click on "Public Subnet 1" check box > "Action" >  "Edit subnet setting" > Do Tick mark on "Enable auto-assign public IPv4 address" > "Save"
 
     For Private Subnet 1, we considered below information
