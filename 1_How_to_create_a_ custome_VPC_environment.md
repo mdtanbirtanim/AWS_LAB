@@ -1,5 +1,16 @@
 # How to create a custome VPC environment in AWS
 
+    Following AWS Resources we are going to use throughout this lab
+
+        1. VPC
+        2. Subnet
+        3. Internet Gateway
+        4. NAT Gateway
+        5. Route Table
+        6. ACL
+        7. Security Group
+        8. EC2 
+
 ## Step 1: On AWS Account
     
     Login to your AWS console and select Region (We considered "Tokyo").
@@ -9,7 +20,7 @@
     NB: We left "Tenancy" to default
 
 ## Step 2: Create Public & Private Subnet
-    We are going to create 2 Public Subnets & 2 Private Subnets
+    We are going to create 2 Public Subnets & 2 Private Subnets. It is recommended to create subnets in multile AZ.
     On the Subnet page, select "Create Subnet"
     In VPC ID, select "awslab"
 
@@ -23,8 +34,8 @@
         Availability Zone: "ap-northeast-1c"
         IPv4 CIDR block: "10.0.1.0/24" > Then select "Create Subnet"
         
-    To enable auto-assign piblic IPv4 address follow the below  procedure (NB: Applicable only for public subnet)
-         Click on "Public Subnet 1" check box > "Action" >  "Edit subnet setting" > Do Tick mark on "Enable auto-assign public IPv4 address" > "Save"
+**To enable auto-assign piblic IPv4 address follow the below  procedure (NB: Applicable only for public subnet)**
+**Click on "Public Subnet 1" check box > "Action" >  "Edit subnet setting" > Do Tick mark on "Enable auto-assign public IPv4 address" > "Save"**
 
     For Private Subnet 1, we considered below information
         Subnet Name: "Private Subnet 1"
