@@ -132,6 +132,7 @@ https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html#RouteTabl
     3. As result, 
         - We successfully SSH to EC2 Machine
         - Got HTTP access from Web Server
+![image](https://user-images.githubusercontent.com/51170124/149872146-f3d3acb9-41d9-4d80-99c0-8f6d8822be65.png)
 
 
 
