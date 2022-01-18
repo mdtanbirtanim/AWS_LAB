@@ -121,7 +121,7 @@ https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html#RouteTabl
    
    We are going to launch EC2 instance and choose required services which we created like VPC, Subnet, SG 
 
-    1. We launched a EC2 Instance (Amazon Linu)
+    1. We launched a EC2 Instance (Amazon Linux)
     2. Installed Web Server on it by pasting "User Data"
                 #!/bin/bash
                 yum update -y
